@@ -1,0 +1,25 @@
+-Co robi dupochron?
+Chroni dupę (NIE LICZY SIĘ DO OCENY)
+zła odpowiedź= DEBILIS
+
+
+-Wyświetl wszystkie grupy
+net localgroup
+
+-jedną komendą utwórz foldery 1,2,dupa,4,5,6,seksidupa,8,9,10
+mkdir 1,2,dupa,4,5,6,seksidupa,8,9,10
+
+-Jaką komendą w diskparcie zrobisz partycje podstawową o wielkości 16BG?
+create partition primary size=16384
+
+-zakładając że graficznie jest włączona, ustaw quote na dysku z: o progu maksymalnym 2gb, ostrzeżenia 1,8gb dla użytkownika dupeczka_1(PRZLICZAJĄC ROZMIARY ZAOKRĄGL W GÓRE)
+fsutil quota modify z: 1887437 2097152 dupeczka_1
+
+-Utwórz użytkownika Jan Kowalski (pracownik1) z hasłem 1qazxsW@ poprawnie
+net user "kowalskijan" "1qazxsW@" /fullname:"Jan Kowalski" /comment:"pracownik1" /active:yes /logonpasswordchg:yes /add
+
+-Na dysku X:\ znajduje się folder Dane. Ustaw prawa uzytkownikowi dupeczka_1 na pełne prawa
+icacls x:\Dane /inheritance:R /grant dupeczka_1:F /t
+
+-Na dysku X:\ znajduje się folder Danee. Ustaw prawa administorom pełne prawa, a grupie użytkownicy odczyt i zapis
+icacls x:\Danee /inheritance:R /grant Administratorzy:F użytkownicy:rw /t

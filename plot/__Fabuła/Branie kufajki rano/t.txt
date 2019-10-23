@@ -1,0 +1,3 @@
+TAK:
+Przychodzisz do szkoły na lekcje, prawie spóźniony boś gruby, masz teraz zagadkę, zanieść kufajkę do szatni czy boisz się
+spóźnienia?(ZANIEŚĆ[TAK]/NIEZANIEŚĆ[NIE])

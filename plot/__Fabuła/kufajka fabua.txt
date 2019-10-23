@@ -1,0 +1,6 @@
+Pi¹tek rano, ju¿ prawie weekend. Niestety, od wolnoœci dzieli ciê jeszcze jeden dzieñ szko³y, a w nim, Systemy z klisiem.
+Budzisz siê rano, wstajesz i ogarniasz siê. Na zewn¹trz jest 8 stopni, wydaje siê byæ ch³odno, ale zdarza³o ci siê 
+chodziæ w gorszych temperaturach.
+Chcesz braæ kufajkê dla pewnoœci i zdrowia czy jesteœ ciep³y ch³op i masz to gdzieœ?
+(WZI¥Æ[TAK]/NIEBRAÆ[NIE])
+
