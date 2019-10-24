@@ -1,4 +1,8 @@
 NIE
-Kliś przyłapał cię z kufajką na wejściu do sali. Nie udało ci się prześlizgnąć niezauważenie.
-Profesor rozkazuje Ci odnieść narzędzie zła na tej ziemi do szatni, ale co ty o tym sądzisz?
-(ODNIEŚĆ[TAK]/NIEODNOSIĆ[NIE])
+Niestety, nie pykło. Kliś stał na wejściu do sali i nawet nie miałeś szansy wejść do środka. Profesor zatrzymał cię w progu i złapał
+za kaptur od kufajki. 
+"Gdzie z tymi kurtkami?!" - Głoś Klisia brzęczy ci w uchu. A może to ślina która wymskneła się do twojego ucha.
+W każdym razie przekaz jest prosty, musisz odnieść kufaję do szatni.
+
+1. Odnoszę, wolę nie ryzykować. Raz już wpadłem, drugiego razu nie będzie.  //TAK
+2. Jak już mówiłem, na przypale albo wcale. Mam na to papiery.  //NIE
