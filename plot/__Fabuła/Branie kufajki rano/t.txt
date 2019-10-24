@@ -1,3 +1,5 @@
 TAK:
-Przychodzisz do szkoły na lekcje, prawie spóźniony boś gruby, masz teraz zagadkę, zanieść kufajkę do szatni czy boisz się
-spóźnienia?(ZANIEŚĆ[TAK]/NIEZANIEŚĆ[NIE])
+Bierzesz kufajkę, i wychodzisz na tą polską syberię. Piździ, ale nie jest ci aż tak zimno, w końcu po coś ją brałeś. Wbijasz do budynku szkoły, jest godzina 7:59. Niemalże spóźniony, nie chcesz dostać spóźnienia bo przez ten jeden punkt spadnie ci zachowanie. Natomiast jeżeli weźmiesz kufajkę do sali to przypał będzie większy. Zanieść kufajkę do szatni czy ryzykujesz?
+
+1. Odnoszę. Nie ma nic gorszego od gniewu profesora.
+2. Na przypale albo wcale.
