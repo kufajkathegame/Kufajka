@@ -1,0 +1,10 @@
+BranieKufajki
+- BranieKufajki.txt
+- BranieKufajki_TAK
+  - DoSzatni.txt
+  - DoSzatni_TAK
+    ...
+  - DoSzatni_NIE
+    ...
+- BranieKufajki_NIE
+  ...
