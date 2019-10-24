@@ -1,4 +1,7 @@
 TAK
-Zaniosłeś kufajkę do szatni, przychodzisz do sali 51 i pokazujesz profesorowi przepustkę.
-Ten jeszcze szybko zerka na twoje buty i wpuszcza cię do sali.
-PRAKTYKA
+Zanosisz ocieplające narzędzie zła na tej ziemii do magicznego grobowca zwanego szatnią. Dostajesz talizman zwany przepustką,
+który pozwoli ci wejść do magicznej sali 51. Po przyjściu pod tą salę, widzisz profesora sprawdzającego przepustki i ficolki.
+Na całe szczęście odniosłeś kurtkę do szatni a sezon na zostawianie butów się nie zaczął, więc na luzaku wbijasz do sali w porę
+na praktykę.
+
+//PRAKTYKA
