@@ -16,7 +16,7 @@ def displayQuest(quest):
 
 def nextQuest(quest, nextQ):
   displayQuest(quest)
-  time.sleep(3)
+  input("(ENTER)>")
   nextQ()
 
 def selectDecision(quest, options):
@@ -138,49 +138,102 @@ def praktyka():
 
 
 def kufajka():
+  def poscig():
+    print("poscig")
+    # MINIGRA JAKAŚ JAK UCIEKNIESZ TO NIE TRAFIASZ NA PRAKTYKE MUSISZ NA DZIEN MIŁOSIEDZIA
+
   def kufajka1A():
     def kufajka2A():
       nextQuest([
-        "Zaniosłeś kufajkę do szatni.",
-        "Przychodzisz do sali 51 i pokazujesz profesorowi przepustkę.",
-        "Ten jeszcze szybko zerka na twoje buty i wpuszcza cię do sali."
+        "Zanosisz ocieplające narzędzie zła na tej ziemii do magicznego grobowca zwanego szatnią.",
+        "",
+        "Dostajesz talizman zwany przepustką,",
+        "który pozwoli ci wejść do magicznej sali 51.",
+        "Po przyjściu pod tą salę widzisz profesora sprawdzającego przepustki i filcoki.",
+        "Na całe szczęście odniosłeś kurtkę do szatni,",
+        "a sezon na zostawianie butów się jeszcze nie zaczął.",
+        "",
+        "Na luzaku wbijasz do sali w porę na praktykę."
       ], praktyka)
 
     def kufajka2B():
-      def kufajka3A():
-        nextQuest([
-          "Odnosisz kufajkę do szatni, uzyskując przepustkę.",
-          "Za jej pomocą jesteś w stanie wejść do sali 51 i zdążyć."
-        ], praktyka)
-
       def kufajka3B():
-        print("Olewasz frajera, co on ci bedzie rozkazywał.Plan był dobry, ale Kliś ruszył w pogoń za tobą. Wybiegasz z sali 51 i ganiasz się z Klisiem po terenie szkoły próbując go zgubić")
-        # MINIGRA JAKAŚ JAK UCIEKNIESZ TO NIE TRAFIASZ NA PRAKTYKE MUSISZ NA DZIEN MIŁOSIEDZIA
+        nextQuest([
+          "W życiu podjąłeś wiele decyzji.",
+          "Niektóre lepsze, niektóre gorsze.",
+          "Ale to przebiło wszystko.",
+          "",
+          "Próbowałeś zignorować Klisia, ale Klisia się nie ingoruje.",
+          "Ruszył za tobą w pościg. Nie daruje Ci tej zniewagi.",
+          "Uciekasz przed profesorem po terenie całej szkoły,",
+          "zaskakuje cię jego kondycja. Nigdy byś nie pomyślał,",
+          "że będzie w stanie siedzieć ci non stop na ogonie.",
+          "",
+          "Odczuwasz już zmęczenie, aż tu nagle olśniło cię.",
+          "Jedyna szansa. Pobiegnij na palarnie, wtop się w tłum.",
+          "To jest jedyne co może cię teraz uratować.",
+          "",
+          "Prześlizgnij się między tłumem."
+        ], poscig)
 
       selectDecision([
-        "Kliś przyłapał cię z kufajką na wejściu do sali.",
-        "Nie udało ci się prześlizgnąć niezauważenie.",
-        "Profesor rozkazuje Ci odnieść narzędzie zła na tej ziemi do szatni, ale co ty o tym sądzisz?"
+        "Niestety, nie pykło.",
+        "",
+        "Kliś stał na wejściu do sali i nawet nie miałeś szansy wejść do środka.",
+        "Profesor zatrzymał cię w progu i złapał za kaptur od kufajki.",
+        "\"Gdzie z tymi kurtkami?!\" - Głoś Klisia brzęczy ci w uchu.",
+        "A może to ślina która wymskneła się do twojego ucha.",
+        "",
+        "W każdym razie przekaz jest prosty, musisz odnieść kufaję do szatni."
       ], [
-        ["Odnosisz kufajkę do szatni.", kufajka3A],
-        ["Olewasz go.", kufajka3B]
+        ["Odnoszę, wolę nie ryzykować. Raz już wpadłem, drugiego razu nie będzie.", kufajka2A],
+        ["Jak już mówiłem, na przypale albo wcale. Mam na to papiery.", kufajka3B]
       ])
 
     selectDecision([
-      "Przychodzisz do szkoły na lekcje, prawie spóźniony boś gruby.",
-      "Masz teraz zagadkę, zanieść kufajkę do szatni czy boisz się spóźnienia?"
+      "Bierzesz kufajkę, i wychodzisz na tą polską syberię.",
+      "",
+      "Piździ, ale nie jest ci aż tak zimno, w końcu po coś ją brałeś.",
+      "Wbijasz do budynku szkoły, jest godzina 7:59.",
+      "Niemalże spóźniony, nie chcesz dostać spóźnienia,",
+      "bo przez ten jeden punkt spadnie ci zachowanie.",
+      "Natomiast jeżeli weźmiesz kufajkę do sali to przypał będzie większy.",
+      "",
+      "Zanosisz kufajkę do szatni czy ryzykujesz?"
     ], [
-      ["Zanoszę", kufajka2A],
-      ["Nie zanoszę", kufajka2B]
+      ["Odnoszę. Nie ma nic gorszego od gniewu profesora.", kufajka2A],
+      ["Na przypale albo wcale.", kufajka2B]
     ])
 
+  def kufajka1B():
+    nextQuest([
+      "Postanowiłeś nie brać kufajki, w końcu zdarzało się",
+      "chodzić ze śmieciami w krótkich spodenkach w temperaturze 0 stopni.",
+      "",
+      "Nie masz kufajki, więc naturalnie nie musisz zanosić jej do szatni.",
+      "Listopad listopadem, śnieg jeszcze nie spadł,",
+      "ani błota z liści nie ma więc filcoków też nie zmieniasz.",
+      "Idziesz sobie do 51 na systemy.",
+      "Profesor ogląda cie wzrokiem i pyta o przeustkę.",
+      "Jako że ty wogóle nie brałeś kurtki, to przepustka nie obowiązuje.",
+      "",
+      "Wchodzisz do sali 51."
+    ], praktyka)
+
   selectDecision([
-    "Budzisz się rano, wstajesz do szkoły.",
-    "Na zewnątrz jest 15 stopni, dość chłodno ale co to dla ciebie.",
-    "Chcesz brać kufajkę dla pewności czy jesteś ciepły chłop?"
+    "Piątek rano, już prawie weekend.",
+    "",
+    "Niestety od wolności dzieli cię jeszcze jeden dzień szkoły,",
+    "a w nim Systemy z Klisiem.",
+    "Budzisz się rano, wstajesz i ogarniasz się.",
+    "Na zewnątrz jest 8 stopni, wydaje się być chłodno,",
+    "ale zdarzało ci się chodzić w gorszych temperaturach.",
+    "",
+    "Chcesz brać kufajkę dla pewności i zdrowia,",
+    "czy jesteś ciepły chłop i masz to gdzieś?"
   ], [
     ["Biorę kufajkę", kufajka1A],
-    ["Nie biorę kufajki", praktyka]
+    ["Nie biorę kufajki", kufajka1B]
   ])
 
 kufajka()
