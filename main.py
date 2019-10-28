@@ -1,5 +1,8 @@
 from os import system, name
 import time
+from tqdm import tqdm
+import asyncio
+import sys
 
 def clear():
   if name == 'nt':
@@ -39,7 +42,7 @@ def selectDecision(quest, options):
   if not answer:
     while True:
       print()
-      print(f"Podaj liczbê (od 1 do {len(options)}):")
+      print(f"Podaj liczbę (od 1 do {len(options)}):")
       answer = getAnswer()
       if answer:
         break
@@ -140,6 +143,133 @@ def praktyka():
 def kufajka():
   def poscig():
     print("poscig")
+    def drawArrow(arrow="right"):
+      clear()
+      print()
+      if arrow == "right":
+        print("                   *")
+        print("                   ***")
+        print("                   *****")
+        print("                   *******")
+        print("                   *********")
+        print("                   ***********")
+        print("  ******************************")
+        print("  ********************************")
+        print("  ******************************")
+        print("                   ***********")
+        print("                   *********")
+        print("                   *******")
+        print("                   *****")
+        print("                   ***")
+        print("                   *")
+
+      elif arrow == "left":
+        print("                *")
+        print("              ***")
+        print("            *****")
+        print("          *******")
+        print("        *********")
+        print("      ***********")
+        print("    ******************************")
+        print("  ********************************")
+        print("    ******************************")
+        print("      ***********")
+        print("        *********")
+        print("          *******")
+        print("            *****")
+        print("              ***")
+        print("                *")
+        
+      elif arrow == "bottom":
+        print("              *****")
+        print("              *****")
+        print("              *****")
+        print("              *****")
+        print("              *****")
+        print("              *****")
+        print("              *****")
+        print("              *****")
+        print("  *****************************")
+        print("    *************************")
+        print("      *********************")
+        print("        *****************")
+        print("          *************")
+        print("            *********")
+        print("              *****")
+        print("                *")
+
+      elif arrow == "top":
+        print("                *")
+        print("              *****")
+        print("            *********")
+        print("          *************")
+        print("        *****************")
+        print("      *********************")
+        print("    *************************")
+        print("  *****************************")
+        print("              *****")
+        print("              *****")
+        print("              *****")
+        print("              *****")
+        print("              *****")
+        print("              *****")
+        print("              *****")
+        print("              *****")
+      print()
+
+    def drawProgress(progress):
+      bar = "|"
+      for i in range(progress):
+        bar += "="
+      for i in range(32-progress):
+        bar += " "
+      bar += "|"
+      print(bar)
+
+    timePassed = False
+    async def getAnswer():
+      a = sys.stdin.read(1)
+      print(a)
+    
+    async def progress():
+      drawArrow()
+      for i in tqdm(range(20)):
+        time.sleep(0.05)
+        pass
+      timePassed = True
+
+    async def game():
+      await asyncio.gather(progress(), getAnswer())
+
+    asyncio.run(game())
+    # for i in range(32+1):
+    #   clear()
+    #   drawArrow()
+    #   drawProgress(i)
+    #   time.sleep(0.02)
+
+    #lose = False
+    # lastArrow = 0
+    # while not lose:
+    #   nextArrow = lastArrow
+    #   while nextArrow == lastArrow:
+    #     nextArrow = random.randint(0,3)
+    #   lastArrow = nextArrow
+    #   arrows = ["right", "left", "bottom", "top"]
+
+    #   drawArrow(arrows[nextArrow])
+    #   while True:  # making a loop
+    #     try:  # used try so that if user pressed other than the given key error will not be shown
+    #         if keyboard.is_pressed('q'):  # if key 'q' is pressed 
+    #             print('You Pressed A Key!')
+    #             break  # finishing the loop
+    #         else:
+    #             pass
+    #     except:
+    #         pass
+
+    # drawArrow("right")
+
     # MINIGRA JAKAŚ JAK UCIEKNIESZ TO NIE TRAFIASZ NA PRAKTYKE MUSISZ NA DZIEN MIŁOSIEDZIA
 
   def kufajka1A():
